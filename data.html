@@ -1,0 +1,26 @@
+<form action="testing.php" method="post">
+    <!-- Your existing HTML code for the table goes here -->
+
+    <!-- Add this part for each dish entry -->
+    <tr>
+        <td class="noBorder name"><input type="text" name="dish_name[]" value="2. Chicken 65" readonly></td>
+        <td class="noBorder"><input type="number" name="quantity[]" value="90" class="item_count"></td>
+        <td class="noBorder"><input type="text" name="rate[]" value="800" readonly></td>
+        <td class="noBorder"><input type="button" value="Delete"></td>
+    </tr>
+
+    <tr>
+        <td class="noBorder name"><input type="text" name="dish_name[]" value="2. Chicken 65" readonly></td>
+        <td class="noBorder"><input type="number" name="quantity[]" value="89" class="item_count"></td>
+        <td class="noBorder"><input type="text" name="rate[]" value="800" readonly></td>
+        <td class="noBorder"><input type="button" value="Delete"></td>
+    </tr>
+
+    <!-- Repeat the above block for each dish entry -->
+
+    <!-- Add a submit button to submit the form -->
+    <tr>
+        <td colspan="3" class="noBorder"></td>
+        <td class="noBorder"><input type="submit" value="Submit"></td>
+    </tr>
+</form>
